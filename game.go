@@ -80,7 +80,7 @@ func main() {
 			break
 		}
 
-		fmt.Println("\nEnemy's turn...")
+		fmt.Println("\nEnemy's turn! The enemy is attacking you.")
 		enemy.TakeDamagePlayer(player)
 
 		if !player.isAlive {
