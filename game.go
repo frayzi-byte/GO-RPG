@@ -70,7 +70,7 @@ func main() {
 	enemy := NewEnemy("Goblin", 100, true)
 
 	for player.isAlive && enemy.isAlive {
-		fmt.Printf("\n[Статус] %s: %d HP | %s: %d HP\n", player.name, player.hp, enemy.name, enemy.hp)
+		fmt.Printf("\n[Status] %s: %d HP | %s: %d HP\n", player.name, player.hp, enemy.name, enemy.hp)
 
 		fmt.Println("\nYour turn! Attack the enemy.")
 		player.TakeDamageEnemy(enemy)
