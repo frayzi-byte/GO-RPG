@@ -72,7 +72,7 @@ func main() {
 	for player.isAlive && enemy.isAlive {
 		fmt.Printf("\n[Статус] %s: %d HP | %s: %d HP\n", player.name, player.hp, enemy.name, enemy.hp)
 
-		fmt.Println("\nТвой ход!")
+		fmt.Println("\nYour turn! Attack the enemy.")
 		player.TakeDamageEnemy(enemy)
 
 		if !enemy.isAlive {
@@ -80,7 +80,7 @@ func main() {
 			break
 		}
 
-		fmt.Println("\nХод врага...")
+		fmt.Println("\nEnemy's turn...")
 		enemy.TakeDamagePlayer(player)
 
 		if !player.isAlive {
